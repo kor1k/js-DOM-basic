@@ -17,8 +17,9 @@
 //     element.classList.toggle("active");
 // }
 
+
 function toggleClassFirstItem() {
-    const firstItem = document.querySelectorAll('.list.list-item')[0];
+    const firstItem = document.querySelectorAll('.list .list-item')[0];
     firstItem.classList.toggle('active');
 
 }
