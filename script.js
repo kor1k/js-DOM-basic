@@ -28,7 +28,7 @@
                                                 // 05.02
 
 //
-const button = document.getElementsByTagName('button')[0];
+// const button = document.getElementsByTagName('button')[0];
 // function buttonClick() {
 //     console.log('clicked')
 // }
@@ -40,22 +40,35 @@ const button = document.getElementsByTagName('button')[0];
 // }
 //
 
-document.addEventListener('click', function (event) {
-    // console.dir(event);
-    const allButtons = document.getElementsByTagName('button');
-    let isButton = false;
-    for (let i = 0; i < allButtons.length; i++) {
-        if (event.target === allButtons[i]) {
-            isButton = true;
-            break;
-        }
-    }
-    if (isButton){
-        console.log('clicked on button')
-    } else {
-        console.log('clicked on document page');
-    }
-});
+// document.addEventListener('click', function (event) {
+//     // console.dir(event);
+//     const allButtons = document.getElementsByTagName('button');
+//     let isButton = false;
+//     for (let i = 0; i < allButtons.length; i++) {
+//         if (event.target === allButtons[i]) {
+//             isButton = true;
+//             break;
+//         }
+//     }
+//     if (isButton){
+//         console.log('clicked on button')
+//     } else {
+//         console.log('clicked on document page');
+//     }
+// });
 
 //TODO
 // `eventListener, .dir, onclick in html, onclick in js, event`
+
+
+//TODO
+// `при нажатии на кнопку квадрат превращается в круг`;
+// function makeRound() {
+//     const item = document.getElementById('item');
+//     item.style.borderRadius="50%"
+// }
+
+function makeRound() {
+    const item = document.getElementById('item');
+    item.classList.toggle('rounded');
+}
